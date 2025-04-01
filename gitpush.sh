@@ -11,6 +11,11 @@
 
 echo 'Subiendo archivos modificados a GitHub'
 
+#saber ruta repositorio
+ruta_repo= git config --get remote.origin.url
+echo "Pulse una tecla para continuar (o Ctrl + C para salir)"
+read valorPorTeclado
+
 # indicamos a Git los archivos a subir
 git add .
 
